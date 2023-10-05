@@ -24,3 +24,15 @@ Enter a number: 5
 Enter a number: 4.0
 4.0 is a positive integer
 """
+
+import math
+q = ("Enter a number: ")
+a = float(input(q))
+
+if a == 0:
+    print("0 is an integer, but it's neither positive nor negative.")
+else:
+    if a - abs(a) == 0:
+        print(f"{a} if a positive integer.")
+    else:
+        print(f"{a} if not a positive integer.")
